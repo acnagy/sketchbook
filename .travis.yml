@@ -3,11 +3,11 @@ sudo: false
 language: php
 php: 7.0
 
-script: echo "hi Maria!!"
+script: 
+echo "hi Maria!!"
+ - ruby --version
 
 before_install:
-   - rvm install 2.1.5
+   - rvm install 2.2
 
 install: true
-
-script: echo "We got this!"
