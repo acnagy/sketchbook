@@ -1,10 +1,10 @@
-sudo: false
+sudo: required
 
 language: php
 php: 7.0
 
 script: 
-echo "hi Maria!!"
+ - echo "hi Maria!!"
  - ruby --version
 
 before_install:
