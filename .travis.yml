@@ -1,13 +1,13 @@
-sudo: required
+sudo: false
 
 language: php
 php: 7.0
-
-script: 
- - echo "hi Maria!!"
- - ruby --version
 
 before_install:
    - rvm install 2.2
 
 install: true
+
+script: 
+ - echo "hi Maria!!"
+ - ruby --version
