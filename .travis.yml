@@ -1,6 +1,13 @@
 sudo: false
-language: ruby
+
+language: php
+php: 7.0
+
+script: echo "hi Maria!!"
+
+before_install:
+   - rvm install 2.1.5
 
 install: true
 
-script: echo "hi"
+script: echo "We got this!"
