@@ -10,3 +10,8 @@ install: true
 
 script:
  - ruby --version
+
+ notifications:
+  email:
+    on_success: never
+    on_failure: never
