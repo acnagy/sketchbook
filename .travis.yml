@@ -11,7 +11,7 @@ install: true
 script:
  - ruby --version
 
- notifications:
+notifications:
   email:
    - on_success: never
    - on_failure: never
