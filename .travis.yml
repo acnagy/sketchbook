@@ -1,17 +1,14 @@
 sudo: false
 
 language: php
-php: 7.0
+php: 5.5
 
 before_install:
-   - gem update bundler
+   - nvm install 6.2.1
 
 install: true
 
 script:
- - ruby --version
+ - node --version
 
-notifications:
-  email:
-     on_success: never
-     on_failure: never
+ dist: precise
