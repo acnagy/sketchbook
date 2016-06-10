@@ -1,7 +1,8 @@
 sudo: false
 
 language: php
-php: 5.5
+php: 
+  - 5.5
 
 before_install:
    - nvm install 6.2.1
@@ -11,4 +12,4 @@ install: true
 script:
   - node --version
 
- dist: precise
+dist: precise
