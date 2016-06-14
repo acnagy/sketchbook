@@ -1,16 +1,13 @@
-os: osx
-
-sudo: required
+language: objective-c
 
 osx_image: xcode8
-
-language: ruby
 
 install: true
 
 script:
-  - ruby --version
+  - nvm list
 
-dist: precise
+dist: osx
+os: osx
 
 
