@@ -14,7 +14,8 @@ install: true
 
 script:
   - python --version
-  - python3 --version
+  - ln -s /usr/bin/python3 /usr/bin/python
+  - python --version
 
 dist: precise
 
