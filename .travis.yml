@@ -2,6 +2,9 @@ language: objective-c
 
 osx_image: xcode8
 
+
+xcode_sdk: iphonesimulator8.4
+
 install: true
 
 script:
