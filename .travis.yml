@@ -3,13 +3,14 @@ sudo: true
 language: java
 jdk: openjdk7
 
-install: true
+addons:  
+  apt: 
+    sources: 
+      - deadsnakes
+    packages:
+      - python3.5
 
-matrix:
-  include:
-    - python: 3.5
-      env:
-      - TOXENV=py35
+install: true
 
 script:
   - python --version
