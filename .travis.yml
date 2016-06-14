@@ -14,7 +14,7 @@ install: true
 
 script:
   - python --version
-  - rm /usr/bin/python
+  - unlink /usr/bin/python
   - ln -s /usr/bin/python3 /usr/bin/python
   - python --version
 
