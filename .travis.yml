@@ -1,16 +1,10 @@
-language: objective-c
+sudo: false
 
-osx_image: xcode8
+language: crystal
 
-
-xcode_sdk: iphonesimulator8.4
+crystal: 0.17
 
 install: true
 
 script:
-  - nvm list
-
-dist: osx
-os: osx
-
-
+  - crystal --version
