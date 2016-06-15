@@ -1,13 +1,15 @@
-sudo: true
+sudo: required
 
-language: go
-go: 1.4
+language: ruby
+rvm:
+  - 2.3.1
+  - 2.3.0
 
 install: true
 
 script:
   - go version
 
+dist: trusty
 group: stable
-dist: precise
 os: linux
