@@ -2,7 +2,7 @@ sudo: false
 
 language: crystal
 
-crystal: latest
+crystal: stable
 
 install: true
 
