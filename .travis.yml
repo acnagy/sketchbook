@@ -4,9 +4,6 @@ language: clojure
 
 install: true
 
-script:
-  - *clojure-version*
-
 dist: precise
 group: stable
 os: linux
