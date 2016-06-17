@@ -1,9 +1,15 @@
 sudo: required
 
-language: clojure
+language: python
+
+services:
+  - docker
+
+before_install:  
+  - sudo apt-get update
+  - sudo apt-get install docker-engine
 
 install: true
 
-dist: precise
-group: stable
-os: linux
+script:
+  - python --version
