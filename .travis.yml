@@ -9,4 +9,4 @@ install: true
 
 script: 
  - ruby --version
- - echo "hi! no skip"
+ - echo hello
