@@ -1,9 +1,9 @@
 language: java
 
-install: true
+jdk:
+  - oraclejdk8
 
-script: 
-  - java -version
+install: true
 
 sudo: required
 
