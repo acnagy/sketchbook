@@ -1,10 +1,11 @@
-language: java
-
-jdk:
-  - oraclejdk8
-
-install: true
+language: python
 
 sudo: required
 
 dist: trusty
+
+install: true
+
+script:
+  - hi
+
