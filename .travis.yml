@@ -5,6 +5,3 @@ dist: precise
 group: stable
 
 install: true
-
-script:
-  - python -V
