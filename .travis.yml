@@ -7,4 +7,4 @@ group: stable
 install: true
 
 script:
-  - python -version
+  - python -V
