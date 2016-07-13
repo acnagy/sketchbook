@@ -1,11 +1,10 @@
 language: python
 
-sudo: required
+dist: precise
 
-dist: trusty
+group: stable
 
 install: true
 
 script:
-  - hi
-
+  - python -version
