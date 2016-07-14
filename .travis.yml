@@ -7,7 +7,7 @@ dist: trusty
 group: stable
 
 script:
-  - sudo pyenv versions
+  - sudo pyenv commands
   - sudo python -V
 
 install: true
