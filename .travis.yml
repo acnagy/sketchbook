@@ -7,7 +7,6 @@ dist: trusty
 group: stable
 
 script:
-  - sudo pyenv commands
-  - sudo python -V
+  - travis_debug
 
 install: true
