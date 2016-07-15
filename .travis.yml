@@ -1,11 +1,11 @@
 language: python
 
-dist: precise
+dist: trusty
 
 group: stable
 
 script:
   - sudo pyenv versions
   - sudo python -V
-  
+
 install: true
