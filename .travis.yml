@@ -9,4 +9,5 @@ group: stable
 install: true
 
 script:
+  - rvm use 2.2.4
   - ruby -v
