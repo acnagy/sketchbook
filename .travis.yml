@@ -1,11 +1,12 @@
-language: python
+language: node_js
 
-dist: trusty
+sudo: required
+
+dist: precise
 
 group: stable
 
-script:
-  - sudo pyenv versions
-  - sudo python -V
-
 install: true
+
+script:
+  - ruby -v
