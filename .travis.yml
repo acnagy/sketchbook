@@ -1,5 +1,3 @@
-language: node_js
-
 sudo: required
 
 dist: precise
@@ -9,6 +7,4 @@ group: stable
 install: true
 
 script:
-  - rvm install ruby-2.2.4
-  - rvm use 2.2.4
-  - ruby -v
+  - time ./script.sh
