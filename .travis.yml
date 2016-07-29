@@ -8,3 +8,4 @@ install: true
 
 script:
   - time ./script.sh
+  - echo hi
