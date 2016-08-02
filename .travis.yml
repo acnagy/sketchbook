@@ -1,3 +1,7 @@
+branches:
+  only:
+    - /.*/
+
 sudo: required
 
 dist: precise
