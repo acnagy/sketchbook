@@ -1,11 +1,11 @@
-os: osx
+dist: precise
 
-osx_image: xcode7.3
+sudo: required
 
 language: python
 
 install: true
 
 script:
-  - echo hi
+  - ./script.sh
 
