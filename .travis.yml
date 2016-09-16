@@ -1,8 +1,12 @@
-dist: precise
+os: osx
+
+osx_image: xcode8
 
 sudo: required
 
 language: python
+
+python: 2.7
 
 install: true
 
