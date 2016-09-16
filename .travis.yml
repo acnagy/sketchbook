@@ -11,5 +11,5 @@ before_install: brew install python
 install: true
 
 script:
-  - python
+  - python --version
 
