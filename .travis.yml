@@ -1,12 +1,6 @@
-os: osx
-
-osx_image: xcode8
-
 sudo: required
 
-language: generic
-
-before_install: brew install python
+dist: trusty
 
 install: true
 
