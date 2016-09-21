@@ -1,9 +1,11 @@
-sudo: required
+sudo: false
 
 dist: trusty
 
 install: true
 
+language: python
+
 script:
   - python --version
-
+  - node -v
