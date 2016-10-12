@@ -1,11 +1,12 @@
 sudo: false
 
-dist: trusty
+dist: precise
 
 install: true
 
 language: python
 
+python: nightly
+
 script:
   - python --version
-  - node -v
