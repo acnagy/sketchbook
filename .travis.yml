@@ -1,12 +1,8 @@
-sudo: false
-
-dist: precise
+os: osx
 
 install: true
 
-language: python
-
-python: nightly
+language: node_js
 
 script:
-  - python --version
+  - node --version
