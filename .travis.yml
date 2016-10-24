@@ -1,11 +1,12 @@
-dist: precise
+dist: trusty
 
 sudo: false
 
 language: php
 
 before_install:
-  - nvm use 6
+ - nvm install v6
+ - nvm use 6
 
 install: true
 
