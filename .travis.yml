@@ -1,4 +1,4 @@
-dist: precise
+dist: sudo
 
 sudo: required
 
@@ -8,4 +8,6 @@ install: true
 
 script:
   - ruby -version
-  - rbenv versions
+
+services:
+  - mysql
