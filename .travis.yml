@@ -6,8 +6,5 @@ language: ruby
 
 install: true
 
-script:
-  - ruby -version
+script: travis_wait 30 script.sh
 
-services:
-  - mysql
