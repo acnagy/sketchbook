@@ -6,5 +6,5 @@ language: ruby
 
 install: true
 
-script: ./script.sh
+script: time ./script.sh
 
