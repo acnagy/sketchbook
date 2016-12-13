@@ -6,5 +6,5 @@ language: ruby
 
 install: true
 
-script: time ./script.sh
+script: travis_wait 5 ./script.sh
 

@@ -9,7 +9,7 @@ do
 	fi
 done
 
-echo sleeping 8 minutes
-sleep 8m
+echo sleeping 1 minute
+sleep 1m
 
 echo done
