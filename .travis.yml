@@ -1,10 +1,15 @@
-dist: sudo
+os:
+  - linux
+  - osx
 
 sudo: required
 
-language: ruby
+language: bash
 
-install: true
+install:
 
-script: travis_wait 5 ./script.sh
+script: 
+  - echo $TRAVIS
+  - echo $TRAVIS_OS_NAME
+
 
