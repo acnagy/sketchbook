@@ -3,12 +3,11 @@ os:
 
 sudo: required
 
-language: bash
+language: java
 
-install:
+install: true
 
 script: 
-  - echo $TRAVIS
-  - echo $TRAVIS_OS_NAME
+  - node -v
 
 
