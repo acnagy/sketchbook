@@ -3,11 +3,13 @@ os:
 
 sudo: required
 
-language: java
+language: bash
+
+env: 
+  - foo="bar"
+  - foo="123"
 
 install: true
 
-script: 
-  - node -v
-
-
+script:
+  - echo $foo
