@@ -1,6 +1,4 @@
 dist:
-  - trusty
-  - precise
   - xenial
 
 sudo: required
