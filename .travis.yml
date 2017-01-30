@@ -1,15 +1,11 @@
-os:
-  - linux
+dist:
+  - trusty
+  - precise
+  - xenial
 
 sudo: required
 
 language: bash
 
-env: 
-  - foo="bar"
-  - foo="123"
-
 install: true
 
-script:
-  - echo $foo
