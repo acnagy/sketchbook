@@ -7,3 +7,8 @@ language: bash
 
 install: true
 
+script:
+  - echo $TRAVIS_COMMIT
+  - echo $TRAVIS_BUILD_ID
+  - echo $TRAVIS_JOB_ID
+  - echo $TRAVIS_PULL_REQUEST_SHA
