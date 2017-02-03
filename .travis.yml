@@ -1,7 +1,7 @@
 sudo: required
 language: bash
-install: false
-script: echo "script"
+install: true
+script: false
 after_script: ./script.sh
 env:
   global:
