@@ -1,18 +1,18 @@
 #!/bin/bash
 
-echo $TEST_PROCESS
+echo test process: $test_process
 
 if [ $TRAVIS_TEST_RESULT -eq 0 ]; then
-	export JOB_RESULT=success
+    job_result=success
 else 
-	export JOB_RESULT=failure
+    job_result=failure
 fi
 
-export body='{
-	"state":"'${JOB_RESULT}'",
-	"description":"travis-ci-tests",
-	"target_url":"https://travis-ci.org/acnagy/sketchbook/jobs/'${TRAVIS_JOB_ID}'",
-	"context":"'${TEST_PROCESS}'"
+body='{
+	"state": "job_result",
+	"description": "travis-ci-tests",
+	"target_url": "https://travis-ci.org/acnagy/sketchbook/jobs/$TRAVIS_JOB_ID",
+	"context": "$TEST_PROCESS"
 }'
 
 curl -X POST "https://api.github.com/repos/acnagy/sketchbook/statuses/${TRAVIS_COMMIT}" \

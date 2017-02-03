@@ -1,7 +1,7 @@
 sudo: required
 language: bash
 install: true
-script: ruby -version
+script: true
 after_script: ./script.sh
 env:
   global:
@@ -9,8 +9,8 @@ env:
     - secure: Y/b/hHSyS1tQRJfF2hqN80wY2YfdN7/OinRCyxT+cSnoW8gMlEiKGMGhpMYfPPKGZY77yl8GAFh0tq/Hy8u2/nqEt80e6LQvQSJZAoh8yhzG2L7jhsxBHzFM0YVEYhMiffgBuDULKsjaiVXwNT4s1ConexcoD7GLY2G698XrfXIGqdHKL1OQA9tVmhXx+MeL4/QN/KmPxLo2VhdBHBzE35Y64RKf7jcusGzQKAFIf3RYVCV2lXMz7OhbSNoXC5kA6R09PVKfay8a4lSCCQ9+EllFfSzkuRE5M+oKZ0KvoT+lyTms7JIlUTR8VVle8eIjKZdPcB1J9o+dE2JU5e4+4yXxdb96PfPWlex27d82kU9g9A/E0E5ReFT6UFSBO8MiVFsUgf5qiWgp3dASMR9TR34m8X8AH6ibu1fxE2O5one89LhlxWIThuRamX0ovZ0YTnTQQsMDrbjnPa2dUWhpbFj9fU12kcosOGIQheL9xlatkjDOg7otMeMG0vv9kPfBC/bKk9ArlJSSrVl3lR1tsNK0UWd7WYykmYSQiRv+PHEGU9j+oG/e1BB3hQ2gVtr5WEerPekp752+wbZDDm2n0HzZTjaoaeGe8Nd9zDpEuQbR92S9qkes/un9dzoAZiCXdhzobuZ1trR6b9eWdmCxMjMPmlpxvLzmmwDapTUsNJw=
   matrix: 
     # run a different set of tests based on the env var in the matrix
-    - TEST_PROCESS=first
-    - TEST_PROCESS=second
-    - TEST_PROCESS=third
-    - TEST_PROCESS=fourth
+    - test_process=first
+    - test_process=second
+    - test_process=third
+    - test_process=fourth
 
