@@ -2,7 +2,7 @@
 
 echo $TEST_PROCESS
 
-if [ $TRAVIS_TEST_STATUS -eq 0 ]; then
+if [ $TRAVIS_TEST_RESULT -eq 0 ]; then
 	export JOB_RESULT=success
 else 
 	export JOB_RESULT=failure
