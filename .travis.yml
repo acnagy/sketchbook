@@ -1,7 +1,7 @@
 sudo: required
 language: bash
 install: true
-script: false
+script: ruby -version
 after_script: ./script.sh
 env:
   global:
