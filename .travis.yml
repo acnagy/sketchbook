@@ -1,6 +1,6 @@
 sudo: required
 language: bash
-install: true
+install: false
 script: echo "script"
 after_script: ./script.sh
 env:
