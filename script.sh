@@ -12,7 +12,7 @@ body='{
 	"state": "'${job_result}'",
 	"description": "travis-ci-tests",
 	"target_url": "https://travis-ci.org/acnagy/sketchbook/jobs/'${TRAVIS_JOB_ID}'",
-	"context": "'${TEST_PROCESS}'"
+	"context": "'${test_process}'"
 }'
 
 curl -X POST "https://api.github.com/repos/acnagy/sketchbook/statuses/${TRAVIS_COMMIT}" \
