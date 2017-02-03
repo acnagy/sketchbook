@@ -17,5 +17,5 @@ body='{
 
 curl -X POST "https://api.github.com/repos/acnagy/sketchbook/statuses/${TRAVIS_COMMIT}" \
 -H "Accept: application/vnd.github.v3+json" \
--H "Authorization: token ${GH_TOKEN}"
--d "$body" \
+-H "Authorization: token ${GH_TOKEN}" \
+-d "$body"
