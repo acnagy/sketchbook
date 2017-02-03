@@ -1,15 +1,21 @@
 #!/bin/bash
 
-echo counting script
-for i in `seq 1 100000`;
-do	
-	if (( $i % 10000 == 0 )) ; 
-	then
-		echo $i
-	fi
-done
+echo test process: $test_process
 
-echo sleeping 1 minute
-sleep 1m
+if [ $TRAVIS_TEST_RESULT -eq 0 ]; then
+    job_result=success
+else 
+    job_result=failure
+fi
 
-echo done
+body='{
+    "state": "'${job_result}'",
+    "description": "travis-ci-tests",
+    "target_url": "https://travis-ci.org/acnagy/sketchbook/jobs/'${TRAVIS_JOB_ID}'",
+    "context": "'${test_process}'"
+}'
+
+curl -X POST "https://api.github.com/repos/acnagy/sketchbook/statuses/${TRAVIS_COMMIT}" \
+-H "Accept: application/vnd.github.v3+json" \
+-H "Authorization: token ${GH_TOKEN}" \
+-d "$body"
