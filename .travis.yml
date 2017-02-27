@@ -1,9 +1,13 @@
-dist:
-  - xenial
+dist: trusty
 
 sudo: required
 
-language: bash
+language: go
+
+go:
+  - 1.8
 
 install: true
+
+script: go version
 
