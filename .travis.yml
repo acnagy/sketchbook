@@ -1,8 +1,9 @@
 osx_image: xcode8.3
 
-dist: osx        
+language: objective-c
+
+os: osx        
 
 install: true
 
-script: script.sh
 
