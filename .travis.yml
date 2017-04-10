@@ -1,10 +1,8 @@
-language: ruby
+osx_image: xcode8.3
 
-rvm:
-  - 2.4
-  - 2.4.1
+dist: osx        
 
 install: true
 
-script: rvm -v
+script: script.sh
 
