@@ -1,9 +1,7 @@
-osx_image: xcode8.3
-
-language: objective-c
-
-os: osx        
-
+sudo: false
+dist: precise
+group: stable
+script: time script.sh
 install: true
 
 
