@@ -5,4 +5,4 @@ before_install:
   - echo $IOS_SIMULATOR_UDID
   - open -a "simulator" --args -CurrentDeviceUDID $IOS_SIMULATOR_UDID
 install: true
-script: script.sh
+script: echo "hello"
