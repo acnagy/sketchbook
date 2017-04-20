@@ -1,7 +1,9 @@
-sudo: false
-dist: precise
-group: stable
-script: time script.sh
+os: osx
+osx_image: xcode8.3
+language: ruby
+before_install:
+  - export IOS_SIMULATOR_UDID=`instruments -s devices | grep "iPhone 7" | awk -F '[ ]' '{print $4}' | awk -F '[\[]' '{print $2}' | sed 's/.$//'`
+  - echo $IOS_SIMULATOR_UDID
+  - open -a "simulator" --args -CurrentDeviceUDID $IOS_SIMULATOR_UDID
 install: true
-
-
+script: script.sh
