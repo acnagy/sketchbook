@@ -1,3 +1,4 @@
-script: ./script.sh
+script: echo script
+after_script: ./script.sh
 
 
