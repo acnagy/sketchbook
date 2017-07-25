@@ -1,4 +1,3 @@
-script: echo script
-after_script: ./script.sh
+script: false
 
 
