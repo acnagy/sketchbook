@@ -1,6 +1,8 @@
 dist: precise
 language: php
-php: 5.3.29
+php:
+  -  5.3.29
+  -  5.4
 script: true
 after_script: cat $HOME/.pearrc
 
