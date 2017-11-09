@@ -1,3 +1,5 @@
-script: false
-
+language: php
+php: 5.3.29
+script: true
+after_script: cat $HOME/.pearrc
 
