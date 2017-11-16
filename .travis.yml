@@ -1,3 +1,4 @@
+sudo: required
 dist: trusty
 before_install: apt-get -qq update
 language: minimal
