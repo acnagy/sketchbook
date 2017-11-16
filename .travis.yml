@@ -1,7 +1,7 @@
 sudo: required
 dist: trusty
-before_install: apt-get -qq update
-language: minimal
-script: true
-after_script: cat $HOME/.pearrc
-
+install: true
+script: sudo apt-get update -y
+language: ruby
+group: stable
+os: linux
