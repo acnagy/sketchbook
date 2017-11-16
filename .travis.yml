@@ -1,8 +1,6 @@
-dist: precise
-language: php
-php:
-  -  5.3.29
-  -  5.4
+dist: trusty
+before_install: apt-get -qq update
+language: minimal
 script: true
 after_script: cat $HOME/.pearrc
 
