@@ -1,7 +1,5 @@
-sudo: required
-dist: trusty
-install: true
-script: sudo apt-get update -y
+sudo: false
+dist: precise
 language: ruby
 group: stable
 os: linux
