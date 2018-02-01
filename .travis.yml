@@ -1,13 +1,8 @@
-sudo: required
-dist: trusty
-script:
-  - sudo apt-get install tree
-  - mkdir $HOME/anothertest
-  - echo "test34535" > $HOME/anothertest/testfileagain.txt
-  - tree -L 3 $HOME
-cache:
-  directories:
-  - /home/travis/anothertest
-before_cache:
-  - tree -L 3 $HOME
+language: minimal
+matrix:
+    include:
+      - os: linux
+        sudo: required
+      - os: linux
+script: true
 
