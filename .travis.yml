@@ -1,8 +1,6 @@
-language: scala
-scala: 2.11.6
-jdk: oraclejdk8
-before_script: 
-  - sudo chmod +x /usr/local/bin/sbt
-  - /usr/local/bin/sbt -sbt-create
-script: sbt ++$TRAVIS_SCALA_VERSION compile "test"
+language: python
+deploy:
+  provider: pypi 
+  edge:
+    source: cs50/dpl
 
