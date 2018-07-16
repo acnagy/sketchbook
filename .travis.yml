@@ -1,6 +1,7 @@
-language: python
-deploy:
-  provider: pypi 
-  edge:
-    source: cs50/dpl
-
+language: bash
+jobs:
+  include:
+    - name: nothing
+      script: skip
+    - name: true
+      script: true
