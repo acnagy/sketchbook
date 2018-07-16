@@ -1,10 +1,8 @@
 language: bash
 jobs:
   include:
-    - stage: nada
+    - stage: yay
       - name: nothing
         script: skip
       - name: true
         script: true
-    - stage: real
-      - script: "echo 'lol nope'"
