@@ -1,8 +1,7 @@
 language: bash
 jobs:
   include:
-    - stage: yay
-      - name: nothing
-        script: skip
-      - name: true
-        script: true
+    - name: lol
+      script: skip
+    - name: true
+      script: true
