@@ -1,6 +1,6 @@
 language: bash
 script: ./test.py $TEST_SUITE
-  matrix:
+  jobs:
     include:
     - name: "python 3.5, suite: a"
       python: "3.5"
