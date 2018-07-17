@@ -7,5 +7,7 @@ script: true
 
 jobs:
   include:
-    - name: "hola, job names"
-    - name: "job names indeed"
+    - name: "ayyyy"
+      script: skip
+    - name: "v v job name"
+      script: skip
