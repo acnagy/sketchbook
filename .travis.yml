@@ -1,12 +1,11 @@
-language: bash
-script: ./test.py $TEST_SUITE
-  jobs:
-    include:
-    - name: "python 3.5, suite: a"
-      python: "3.5"
-      script: TEST_SUITE=test_3.5_a
-    - name: "python 3.5, suite: b"
-      python: "3.5"
-      env: TEST_SUITE=test_3.5_b
-    - python: "pypy"
-      env: TEST_SUITE=suite_pypy
+# version: '= 0'
+# conditions: v1
+
+language: generic
+install: skip
+script: true
+
+jobs:
+  include:
+    - name: "hola, job names"
+    - name: "job names indeed"
