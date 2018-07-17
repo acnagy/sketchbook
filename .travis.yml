@@ -1,7 +1,10 @@
 language: bash
 jobs:
   include:
-    - name: lol
+    - stage: "Stage 1"
+      name: "lol"
       script: skip
-    - name: true
+      name: "yay"
+      script: skip
+    - name: "Stage 2"
       script: true
