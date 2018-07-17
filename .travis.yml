@@ -1,10 +1,12 @@
 language: bash
-jobs:
-  include:
-    - stage: "Stage 1"
-      name: "lol"
-      script: skip
-      name: "yay"
-      script: skip
-    - name: "Stage 2"
-      script: true
+script: ./test.py $TEST_SUITE
+  matrix:
+    include:
+    - name: "python 3.5, suite: a"
+      python: "3.5"
+      script: TEST_SUITE=test_3.5_a
+    - name: "python 3.5, suite: b"
+      python: "3.5"
+      env: TEST_SUITE=test_3.5_b
+    - python: "pypy"
+      env: TEST_SUITE=suite_pypy
