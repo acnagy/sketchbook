@@ -5,7 +5,7 @@ language: generic
 install: skip
 script: true
 
-jobs:
+matrix:
   include:
     - name: "ayyyy"
       script: skip
