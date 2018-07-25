@@ -1,3 +1,17 @@
 language: bash
 sudo: true
 script: skip
+
+before_install:
+  - sudo apt-cache search linux-headers-
+  - sudo apt-get -y install -f linux-headers-$(uname -r)
+  - sudo apt-get -y install -f linux-headers-generic
+
+install:
+  - sudo apt-get install -y openafs-client openafs-modules-dkms openafs-krb5 krb5-user krb5-config
+
+before_script:
+  - echo cs.stanford.edu | sudo tee /etc/openafs/ThisCell
+  - sudo wget --no-check-certificate --output-document=/etc/openafs/CellServDB http://grand.central.org/dl/cellservdb/CellServDB
+  - sudo service openafs-client start
+  - strace ls /afs/cs.stanford.edu
