@@ -1,7 +1,4 @@
+language: shell
+os: windows
 script: true
-matrix:
-  include:
-   - os: linux
-     language: bash
-   - os: osx
-     language: swift
+
