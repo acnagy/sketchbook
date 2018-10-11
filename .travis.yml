@@ -2,6 +2,4 @@ language: shell
 os: windows
 script:
  - echo "yay"
- - echo "yay\!"
-
 
