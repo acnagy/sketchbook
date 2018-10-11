@@ -1,4 +1,7 @@
 language: shell
 os: windows
-script: true
+script:
+ - echo "yay"
+ - echo "yay\!"
+
 
