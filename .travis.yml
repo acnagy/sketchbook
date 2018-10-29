@@ -1,5 +1,11 @@
-language: shell
-os: windows
+os: linux
 script:
  - echo "yay"
+jobs
+  include:
+   - os: linux
+   - sudo: required
+     os: linux
+   - sudo: false
+     os: linux
 
