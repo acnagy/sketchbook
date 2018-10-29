@@ -1,10 +1,11 @@
-script:
- - echo "yay"
-jobs
+jobs:
   include:
    - os: linux
+     script: echo "default"
    - sudo: required
      os: linux
+     script: echo "required"
    - sudo: false
      os: linux
+     script: echo "false"
 
