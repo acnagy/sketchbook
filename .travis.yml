@@ -1,11 +1,14 @@
 jobs:
   include:
-   - os: linux
+   - name: "default linux"
+     os: linux
      script: echo "default"
-   - sudo: required
+   - name: "sudo required"
+     sudo: required
      os: linux
      script: echo "required"
-   - sudo: false
+   - name: "sudo false"
+     sudo: false
      os: linux
      script: echo "false"
 
