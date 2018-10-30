@@ -1,5 +1,4 @@
-name: "sudo false"
-sudo: false
+name: "sudo nonspecified"
 language: bash
 script: skip
 
